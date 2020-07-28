@@ -2,9 +2,14 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "resource1",
-      "path": "doacoes_covid-19-recebidas.csv",
       "profile": "tabular-data-resource",
+      "name": "doacoes-covid-19-recebidas",
+      "path": "doacoes-covid-19-recebidas.csv",
+      "title": "Doações recebidas para enfrenamento à COVID-19",
+      "description": "Contém a relação das doações recebidas para enfrenamento à COVID-19",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
@@ -168,14 +173,17 @@
             "title": "Valor total comercial"
           }
         ]
-      },
-      "encoding": "utf-8",
-      "format": "csv"
+      }
     },
     {
-      "name": "resource2",
-      "path": "doacoes_covid-19-destino.csv",
       "profile": "tabular-data-resource",
+      "name": "doacoes-covid-19-destino",
+      "path": "doacoes-covid-19-destino.csv",
+      "title": "Destino das doações recebidas para enfrenamento à COVID-19",
+      "description": "Contém a destinação das doações recebidas para enfrenamento à COVID-19",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
@@ -306,33 +314,33 @@
           },
           {
             "name": "CONTENDO ",
-            "type": "any",
+            "type": "string",
             "format": "default"
           },
           {
             "name": "UNIDADE_MEDIDA",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Unidade de medida",
             "description": "Unidade de medida do bem ou material doado"
           },
           {
             "name": "QUANTIDADE_FRACIONADA ",
-            "type": "any",
+            "type": "number",
             "format": "default",
             "title": "Quantidade fracionada",
             "description": "Quantidade fracionada do bem ou material doado"
           },
           {
             "name": "UNIDADE_FRACIONADA",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "description": "Unidade fracionada do bem ou material doado",
             "title": "Unidade fracionada"
           },
           {
             "name": "UNIDADE_COMERCIAL",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Unidade comercial",
             "description": "Unidade de medida comercial do bem ou material doado"
@@ -346,32 +354,36 @@
           },
           {
             "name": "VALOR_UNITARIO_COMERCIAL",
-            "type": "any",
+            "type": "number",
             "format": "default",
             "title": "Valor unitário comercial",
             "description": "Valor unitário comercial do bem ou material doado"
           },
           {
             "name": "VALOR_TOTAL ",
-            "type": "any",
+            "type": "number",
             "format": "default",
             "description": "Valor total do bem ou material doado",
             "title": "Valor total"
           }
-        ]
-      }
-    }
-  ],
-  "name": "doacoes-recebidas-covid-19",
-  "title": "Doações COVID-19",
-  "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19",
-  "licenses": [
-    {}
-  ],
-  "keywords": [
-    "coronavirus",
-    "covid",
-    "covid-19",
-    "covid19"
-  ]
+       ],
+       "missingValues": [
+         "NA"
+       ]
+    },
+     "dialect": {
+     "delimiter": ";"
+     }
+   }
+ ],
+ "keywords": [
+   "COVID-19",
+   "coronavirus",
+   "doacao"
+ ],
+ "name": "doacoes-covid-19",
+ "title": "Doações COVID-19",
+ "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
+ "private": "false",
+ "state": "active"
 }
