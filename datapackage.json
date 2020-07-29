@@ -14,56 +14,28 @@
         "fields": [
           {
             "name": "TIPO_DOACAO",
-            "type": "string",
+            "type": "integer",
             "format": "default",
             "title": "Tipo de doação",
-            "description": "Tipo de bem ou material doado ao Estado"
-          },
-          {
-            "name": "NF",
-            "type": "number",
-            "format": "default",
-            "title": "Número da nota fiscal",
-            "description": "Número da nota fiscal "
-          },
-          {
-            "name": "DATA_EMISSAO_NF",
-            "type": "date",
-            "format": "default",
-            "title": "Data de emissão da nota fiscal",
-            "description": "Data em que a nota fiscal foi emitida"
+            "description": "Tipo de bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc."
           },
           {
             "name": "DOADOR",
-            "type": "string",
+            "type": "integer",
             "format": "default",
             "title": "Razão social do doador",
-            "description": "Nome da empresa responsável pela doação"
+            "description": "Nome completo do responsável pela doação"
           },
           {
             "name": "CNPJ_DOADOR",
             "type": "number",
             "format": "default",
-            "title": "Cadastro Nacional de Pessoas Jurídicas do doador",
+            "title": "CNPJ do daodor",
             "description": "Cadastro Nacional de Pessoas Jurídicas do doador"
           },
           {
-            "name": "FORNECEDOR",
-            "type": "string",
-            "format": "default",
-            "title": "Razão social do Fornecedor",
-            "description": "Nome da empresa responsável pelo fornecimento do bem ou material doado."
-          },
-          {
-            "name": "CNPJ_FORNECEDOR",
-            "type": "number",
-            "format": "default",
-            "title": "Cadastro Nacional de Pessoas Jurídicas do fornecedor",
-            "description": "Cadastro Nacional de Pessoas Jurídicas do fornecedor do bem ou material doado"
-          },
-          {
             "name": "ORGAO_ENTIDADE",
-            "type": "string",
+            "type": "integer",
             "format": "default",
             "title": "Órgão ou Entidade Estadual",
             "description": "Órgão ou Entidade Estadual responsável pelo recebimento da doação"
@@ -72,105 +44,64 @@
             "name": "CNPJ_ORGAO_ENTIDADE",
             "type": "number",
             "format": "default",
-            "title": "Cadastro Nacional de Pessoas Jurídicas do órgão ou entidade",
-            "description": "Cadastro Nacional de Pessoas Jurídicas do Órgão ou Entidade Estadual responsável pelo recebimento da doação"
+            "title": "CNPJ do Órgão ou entidade",
+            "description": "Cadastro Nacional de Pessoas Jurídicas dos Órgãos ou Entidades Estaduais responsáveis pelo recebimento da doação"
           },
           {
             "name": "LOCAL_RECEBIMENTO",
-            "type": "string",
+            "type": "integer",
             "format": "default",
-            "title": "Local de recebimento"
+            "title": "Local de recebimento",
+            "description": "Local em que a doação foi entregue para o Estado"
           },
           {
-            "name": "DATA_RECEBIMENTO",
+            "name": "DATA_DOACAO",
             "type": "date",
             "format": "default",
-            "title": "Data de recebimento",
+            "title": "Data da doação",
             "description": "Data de recebimento do bem ou material no Estado"
           },
           {
-            "name": "TIPO_PRODUTO",
-            "type": "string",
+            "name": "CLASSIFICACAO_PRODUTO",
+            "type": "integer",
             "format": "default",
-            "title": "Tipo de produto",
-            "description": "Tipo de bem ou material doado ao Estado"
-          },
-          {
-            "name": "CODIGO_PRODUTO",
-            "type": "number",
-            "format": "default",
-            "title": "Código do produto",
-            "description": "Código do produto"
-          },
-          {
-            "name": "PRODUTO_NF",
-            "type": "string",
-            "format": "default",
-            "title": "Nome do produto na nota fiscal",
-            "description": "Descrição do bem ou material doador conforme consta na nota fiscal"
+            "title": "Classificação do produto",
+            "description": "Classificação do produto doado"
           },
           {
             "name": "PRODUTO",
-            "type": "string",
+            "type": "integer",
             "format": "default",
-            "title": "Produto",
-            "description": "Descrição do bem ou material doado"
+            "title": "Nome do produto na nota fiscal",
+            "description": "Descrição do bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
           },
           {
-            "name": "UNIDADE_RECEBIDA",
-            "type": "string",
+            "name": "UNIDADE",
+            "type": "integer",
             "format": "default",
-            "title": "Unidade recebida na transportadora",
-            "description": "Unidade de medida recebida na transportadora"
+            "title": "Unidade de medida ",
+            "description": "Unidade  de medida fracionada"
           },
           {
-            "name": "QUANTIDADE_RECEBIDA",
+            "name": "QUANTIDADE",
             "type": "number",
             "format": "default",
-            "title": "Quantidade recebida na transportadora",
-            "description": "Quantidade recebida na transportadora"
-          },
-          {
-            "name": "UNIDADE_VOLUMETRICA_NF",
-            "type": "string",
-            "format": "default",
-            "title": "Unidade volumétrica da nota fiscal",
-            "description": "Unidade volumétrica conforme consta na nota fiscal"
-          },
-          {
-            "name": "QUANTIDADE_VOLUMETRICA_NF",
-            "type": "number",
-            "format": "default",
-            "description": "Quantidade volumétrica conforme consta na nota fiscal",
-            "title": "Quantidade volumétrica da nota fiscal"
-          },
-          {
-            "name": "UNIDADE_FRACIONADA",
-            "type": "string",
-            "format": "default",
-            "title": "Unidade fracionada",
-            "description": "Unidade fracionada"
-          },
-          {
-            "name": "QUANTIDADE_FRACIONADA",
-            "type": "number",
-            "format": "default",
-            "title": "Quantidade fracionada",
+            "title": "Quantidade",
             "description": "Quantidade fracionada"
           },
           {
-            "name": "VALOR_UNITARIO_COMERCIAL",
+            "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
-            "title": "Valor unitário comercial",
+            "title": "Valor unitário ",
             "description": "Valor unitário comercial do bem ou material doado"
           },
           {
-            "name": "VALOR_TOTAL_COMERCIAL",
+            "name": "VALOR_TOTAL",
             "type": "number",
             "format": "default",
             "description": "Valor total comercial do bem ou material doado",
-            "title": "Valor total comercial"
+            "title": "Valor total "
           }
         ]
       }
@@ -187,173 +118,49 @@
       "schema": {
         "fields": [
           {
-            "name": "RECIBO",
-            "type": "number",
-            "format": "default",
-            "title": "Recibo",
-            "description": "Ordem sequencial do recibo "
-          },
-          {
-            "name": "ORIGEM",
-            "type": "string",
-            "format": "default",
-            "title": "Origem da doação",
-            "description": "Local de origem do Estado em que a doação está sendo retirada"
-          },
-          {
-            "name": "TRANSPORTE",
-            "type": "string",
-            "format": "default",
-            "title": "Responsável pelo transporte",
-            "description": "Responsável pelo transporte"
-          },
-          {
-            "name": "LOCAL_RETIRADA",
-            "type": "string",
-            "format": "default",
-            "title": "Local de retirada do bem ou material",
-            "description": "Local de retirada do bem ou material doado"
-          },
-          {
             "name": "DESTINATARIO",
             "type": "number",
             "format": "default",
             "title": "Destinatário da doação",
-            "description": "Descrição de quem receberá o bem ou material doado"
+            "description": "Descrição do destinatário da doação"
           },
           {
-            "name": "ENDERECO_DESTINATARIO",
+            "name": "CIDADE",
             "type": "string",
             "format": "default",
-            "title": "Endereço do destinatário",
-            "description": "Nome da rua, avenida e etc do destinatário que receberá o bem ou material doado"
+            "title": "Cidade do Destinatário",
+            "description": "Cidade do Destinatário"
           },
           {
-            "name": "BAIRRO_DESTINATARIO",
-            "type": "any",
-            "format": "default",
-            "description": "Bairro do destinatário que receberá o bem ou material doado",
-            "title": "Bairro do destinatário"
-          },
-          {
-            "name": "CIDADE_DESTINATARIO",
-            "type": "any",
-            "format": "default",
-            "description": "Cidade do destinatário que receberá o bem ou material doado",
-            "title": "Cidade do destinatário"
-          },
-          {
-            "name": "CEP_DESTINATARIO",
-            "type": "any",
-            "format": "default",
-            "description": "CEP do destinatário que receberá o bem ou material doado",
-            "title": "CEP do destinatário"
-          },
-          {
-            "name": "RESPONSAVEL_RECEBIMENTO",
-            "type": "any",
-            "format": "default",
-            "title": "Responsável pelo recebimento",
-            "description": "Nome do responsável pelo recebimento do bem ou material doado"
-          },
-          {
-            "name": "CPF_ID_RESPONSAVEL_RECEBIMENTO",
-            "type": "number",
-            "format": "default",
-            "title": "CPF ou Carteira de identidade do responsável",
-            "description": "CPF ou Carteira de identidade do responsável pelo recebimento do bem ou material doado"
-          },
-          {
-            "name": "OCUPACAO_RESPONSAVEL_RECEBIMENTO",
-            "type": "any",
-            "format": "default",
-            "title": "Cargo ou função do responsável",
-            "description": "Cargo ou função do responsável pelo recebimento do bem ou material doado"
-          },
-          {
-            "name": "ENTE_RECEBIMENTO",
-            "type": "string",
-            "format": "default",
-            "title": "Ente que recebeu a doação",
-            "description": "Órgão, entidade ou Prefeitura que recebeu o bem ou material doado"
-          },
-          {
-            "name": "DATA_ENTREGA_PRODUTO",
+            "name": "DATA_ENTREGA",
             "type": "date",
             "format": "default",
             "title": "Data de entrega do produto",
             "description": "Data de entrega do bem ou material doado"
           },
           {
-            "name": "CODIGO_PRODUTO",
-            "type": "number",
-            "format": "default",
-            "title": "Código do produto",
-            "description": "Código do produto"
-          },
-          {
-            "name": "DESCRICAO_PRODUTO",
-            "type": "string",
+            "name": "PRODUTO",
+            "type": "integer",
             "format": "default",
             "title": "Descrição do produto",
             "description": "Descrição do bem ou material doado"
           },
           {
-            "name": "QUANTIDADE_VOLUMETRICA _ENTREGUE",
+            "name": "QUANTIDADE",
             "type": "number",
             "format": "default",
-            "title": "Quantidade volumétrica entregue",
-            "description": "Quantidade volumétrica do bem ou material entregue"
-          },
-          {
-            "name": "UNIDADE_VOLUMETRICA_ENTREGUE",
-            "type": "string",
-            "format": "default",
-            "description": "Unidade volumétrica do bem ou material entregue",
-            "title": "Unidade volumétrica entregue"
-          },
-          {
-            "name": "CONTENDO ",
-            "type": "string",
-            "format": "default"
+            "title": "Quantidade ",
+            "description": "Quantidade fracionada do bem ou material doado"
           },
           {
             "name": "UNIDADE_MEDIDA",
             "type": "string",
             "format": "default",
-            "title": "Unidade de medida",
-            "description": "Unidade de medida do bem ou material doado"
-          },
-          {
-            "name": "QUANTIDADE_FRACIONADA ",
-            "type": "number",
-            "format": "default",
-            "title": "Quantidade fracionada",
-            "description": "Quantidade fracionada do bem ou material doado"
-          },
-          {
-            "name": "UNIDADE_FRACIONADA",
-            "type": "string",
-            "format": "default",
             "description": "Unidade fracionada do bem ou material doado",
-            "title": "Unidade fracionada"
+            "title": "Unidade de medida"
           },
           {
-            "name": "UNIDADE_COMERCIAL",
-            "type": "string",
-            "format": "default",
-            "title": "Unidade comercial",
-            "description": "Unidade de medida comercial do bem ou material doado"
-          },
-          {
-            "name": "QUANTIDADE_COMERCIAL ",
-            "type": "number",
-            "format": "default",
-            "title": "Quantidade comercial",
-            "description": "Quantidade comercial do bem ou material doado"
-          },
-          {
-            "name": "VALOR_UNITARIO_COMERCIAL",
+            "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
             "title": "Valor unitário comercial",
@@ -366,24 +173,30 @@
             "description": "Valor total do bem ou material doado",
             "title": "Valor total"
           }
-       ],
-       "missingValues": [
-         "NA"
-       ]
-    },
-     "dialect": {
-     "delimiter": ";"
-     }
-   }
- ],
- "keywords": [
-   "COVID-19",
-   "coronavirus",
-   "doacao"
- ],
- "name": "doacoes-covid-19",
- "title": "Doações COVID-19",
- "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
- "private": "false",
- "state": "active"
+        ],
+        "missingValues": [
+          "NA"
+        ]
+      },
+      "dialect": {
+        "delimiter": ";",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": true,
+        "header": true,
+        "caseSensitiveHeader": false
+      }
+    }
+  ],
+  "keywords": [
+    "COVID-19",
+    "coronavirus",
+    "doacao"
+  ],
+  "name": "doacoes-covid-19",
+  "title": "Doações COVID-19",
+  "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
+  "private": "false",
+  "state": "active"
 }
