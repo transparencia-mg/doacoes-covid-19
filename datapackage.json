@@ -2,190 +2,181 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "name": "doacoes-destino",
+      "path": "data/doacoes_destino.csv",
       "profile": "tabular-data-resource",
-      "name": "doacoes-covid-19-recebidas",
-      "path": "doacoes-covid-19-recebidas.csv",
-      "title": "Doações recebidas para enfrenamento à COVID-19",
-      "description": "Contém a relação das doações recebidas para enfrenamento à COVID-19",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
-            "name": "TIPO_DOACAO",
+            "name": "id",
             "type": "integer",
             "format": "default",
-            "title": "Tipo de doação",
-            "description": "Tipo de bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc."
+            "title": "ID",
+            "description": "Número sequencial com as doações"
           },
           {
-            "name": "DOADOR",
-            "type": "integer",
+            "name": "destinatario_doacao",
+            "type": "any",
             "format": "default",
-            "title": "Razão social do doador",
-            "description": "Nome completo do responsável pela doação"
+            "title": "Destinatário da Doação",
+            "description": "Descrição do destinatário da doação"
           },
           {
-            "name": "CNPJ_DOADOR",
+            "name": "data_entrega ",
+            "type": "any",
+            "format": "default",
+            "title": "Data de entrega ",
+            "description": "Data de entrega da doação ao destinatário"
+          },
+          {
+            "name": "cidade_destinatario",
+            "type": "any",
+            "format": "default",
+            "title": "Cidade do destinatário",
+            "description": "Cidade do Destinatário"
+          },
+          {
+            "name": "produto",
+            "type": "any",
+            "format": "default",
+            "title": "Produto",
+            "description": "Descrição do bem ou material destinado"
+          },
+          {
+            "name": "quantidade",
             "type": "number",
             "format": "default",
-            "title": "CNPJ do daodor",
-            "description": "Cadastro Nacional de Pessoas Jurídicas do doador"
+            "description": "Quantidade fracionada do bem ou material doado",
+            "title": "Quantidade"
           },
           {
-            "name": "ORGAO_ENTIDADE",
-            "type": "integer",
+            "name": "unidade ",
+            "type": "any",
             "format": "default",
-            "title": "Órgão ou Entidade Estadual",
-            "description": "Órgão ou Entidade Estadual responsável pelo recebimento da doação"
+            "title": "Unidade",
+            "description": "Unidade fracionada do bem ou material doado"
           },
           {
-            "name": "CNPJ_ORGAO_ENTIDADE",
-            "type": "number",
-            "format": "default",
-            "title": "CNPJ do Órgão ou entidade",
-            "description": "Cadastro Nacional de Pessoas Jurídicas dos Órgãos ou Entidades Estaduais responsáveis pelo recebimento da doação"
-          },
-          {
-            "name": "LOCAL_RECEBIMENTO",
-            "type": "integer",
-            "format": "default",
-            "title": "Local de recebimento",
-            "description": "Local em que a doação foi entregue para o Estado"
-          },
-          {
-            "name": "DATA_DOACAO",
-            "type": "date",
-            "format": "default",
-            "title": "Data da doação",
-            "description": "Data de recebimento do bem ou material no Estado"
-          },
-          {
-            "name": "CLASSIFICACAO_PRODUTO",
-            "type": "integer",
-            "format": "default",
-            "title": "Classificação do produto",
-            "description": "Classificação do produto doado"
-          },
-          {
-            "name": "PRODUTO",
-            "type": "integer",
-            "format": "default",
-            "title": "Nome do produto na nota fiscal",
-            "description": "Descrição do bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
-          },
-          {
-            "name": "UNIDADE",
-            "type": "integer",
-            "format": "default",
-            "title": "Unidade de medida ",
-            "description": "Unidade  de medida fracionada"
-          },
-          {
-            "name": "QUANTIDADE",
-            "type": "number",
-            "format": "default",
-            "title": "Quantidade",
-            "description": "Quantidade fracionada"
-          },
-          {
-            "name": "VALOR_UNITARIO",
+            "name": "valor_unitario ",
             "type": "number",
             "format": "default",
             "title": "Valor unitário ",
             "description": "Valor unitário comercial do bem ou material doado"
           },
           {
-            "name": "VALOR_TOTAL",
+            "name": "valor_total",
+            "type": "number",
+            "format": "default",
+            "title": "Valor total",
+            "description": "Valor total do bem ou material doado"
+          }
+        ]
+      }
+    },
+    {
+      "name": "doacoes-recebidas",
+      "path": "data/doacoes_recebidas.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer",
+            "format": "default",
+            "title": "ID",
+            "description": "Número sequencial"
+          },
+          {
+            "name": "tipo_doacao",
+            "type": "any",
+            "format": "default",
+            "title": "Tipo de doação",
+            "description": "Tipo de bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
+          },
+          {
+            "name": "doador",
+            "type": "any",
+            "format": "default",
+            "title": "Doador",
+            "description": "Nome completo do responsável pela doação"
+          },
+          {
+            "name": "cnpj_doador",
+            "type": "string",
+            "format": "default",
+            "title": "CNPJ do doador",
+            "description": "CNPJ do doador"
+          },
+          {
+            "name": "orgao_entidade _estadual",
+            "type": "any",
+            "format": "default",
+            "title": "Órgão ou Entidade Estadual",
+            "description": "Órgão ou Entidade Estadual responsável pelo recebimento da doação"
+          },
+          {
+            "name": "cnpj_orgao_entidade ",
+            "type": "string",
+            "format": "default",
+            "description": "CNPJ dos Órgãos ou Entidades Estaduais responsáveis pelo recebimento da doação",
+            "title": "CNPJ do Órgão ou entidade"
+          },
+          {
+            "name": "local_recebimento",
+            "type": "any",
+            "format": "default",
+            "title": "Local de recebimento",
+            "description": "Local em que a doação foi entregue para o Estado"
+          },
+          {
+            "name": "data_doacao",
+            "type": "date",
+            "format": "default",
+            "title": "Data da doação"
+          },
+          {
+            "name": "classificacao_produto",
+            "type": "any",
+            "format": "default",
+            "title": "Classificação do produto",
+            "description": "Classificação do produto doado"
+          },
+          {
+            "name": "produto",
+            "type": "any",
+            "format": "default",
+            "title": "Produto",
+            "description": "Descrição do bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
+          },
+          {
+            "name": "unidade",
+            "type": "string",
+            "format": "default",
+            "title": "Unidade de medida",
+            "description": "Unidade  de medida fracionada"
+          },
+          {
+            "name": "quantidade",
+            "type": "number",
+            "format": "default",
+            "description": "Quantidade fracionada",
+            "title": "Quantidade"
+          },
+          {
+            "name": "valor_unitario ",
+            "type": "number",
+            "format": "default",
+            "title": "Valor unitário ",
+            "description": "Valor unitário comercial do bem ou material doado"
+          },
+          {
+            "name": "valor_total",
             "type": "number",
             "format": "default",
             "description": "Valor total comercial do bem ou material doado",
             "title": "Valor total "
           }
         ]
-      }
-    },
-    {
-      "profile": "tabular-data-resource",
-      "name": "doacoes-covid-19-destino",
-      "path": "doacoes-covid-19-destino.csv",
-      "title": "Destino das doações recebidas para enfrenamento à COVID-19",
-      "description": "Contém a destinação das doações recebidas para enfrenamento à COVID-19",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "DESTINATARIO",
-            "type": "number",
-            "format": "default",
-            "title": "Destinatário da doação",
-            "description": "Descrição do destinatário da doação"
-          },
-          {
-            "name": "CIDADE",
-            "type": "string",
-            "format": "default",
-            "title": "Cidade do Destinatário",
-            "description": "Cidade do Destinatário"
-          },
-          {
-            "name": "DATA_ENTREGA",
-            "type": "date",
-            "format": "default",
-            "title": "Data de entrega do produto",
-            "description": "Data de entrega do bem ou material doado"
-          },
-          {
-            "name": "PRODUTO",
-            "type": "integer",
-            "format": "default",
-            "title": "Descrição do produto",
-            "description": "Descrição do bem ou material doado"
-          },
-          {
-            "name": "QUANTIDADE",
-            "type": "number",
-            "format": "default",
-            "title": "Quantidade ",
-            "description": "Quantidade fracionada do bem ou material doado"
-          },
-          {
-            "name": "UNIDADE_MEDIDA",
-            "type": "string",
-            "format": "default",
-            "description": "Unidade fracionada do bem ou material doado",
-            "title": "Unidade de medida"
-          },
-          {
-            "name": "VALOR_UNITARIO",
-            "type": "number",
-            "format": "default",
-            "title": "Valor unitário comercial",
-            "description": "Valor unitário comercial do bem ou material doado"
-          },
-          {
-            "name": "VALOR_TOTAL ",
-            "type": "number",
-            "format": "default",
-            "description": "Valor total do bem ou material doado",
-            "title": "Valor total"
-          }
-        ],
-        "missingValues": [
-          "NA"
-        ]
-      },
-      "dialect": {
-        "delimiter": ";",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": true,
-        "header": true,
-        "caseSensitiveHeader": false
       }
     }
   ],
