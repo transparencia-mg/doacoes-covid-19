@@ -1,7 +1,7 @@
 {
   "profile": "tabular-data-package",
   "resources": [
-        {
+    {
       "name": "doacoes-recebidas",
       "path": "data/doacoes_recebidas.csv",
       "profile": "tabular-data-resource",
@@ -88,25 +88,29 @@
             "type": "number",
             "format": "default",
             "description": "Quantidade fracionada",
-            "title": "Quantidade"
+            "title": "Quantidade",
+            "decimalChar": ","
           },
           {
             "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
             "title": "Valor unitário ",
-            "description": "Valor unitário comercial do bem ou material doado"
+            "description": "Valor unitário comercial do bem ou material doado",
+            "decimalChar": ","
+
           },
           {
             "name": "VALOR_TOTAL",
             "type": "number",
             "format": "default",
             "description": "Valor total comercial do bem ou material doado",
-            "title": "Valor total "
+            "title": "Valor total ",
+            "decimalChar": ","
           }
         ]
       }
-    }
+    },
     {
       "name": "doacoes-destino",
       "path": "data/doacoes_destino.csv",
@@ -160,21 +164,24 @@
             "type": "any",
             "format": "default",
             "title": "Unidade",
-            "description": "Unidade fracionada do bem ou material doado"
+            "description": "Unidade fracionada do bem ou material doado",
+            "decimalChar": ","
           },
           {
             "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
             "title": "Valor unitário ",
-            "description": "Valor unitário comercial do bem ou material doado"
+            "description": "Valor unitário comercial do bem ou material doado",
+            "decimalChar": ","
           },
           {
             "name": "VALOR_TOTAL",
             "type": "number",
             "format": "default",
             "title": "Valor total",
-            "description": "Valor total do bem ou material doado"
+            "description": "Valor total do bem ou material doado",
+            "decimalChar": ","
           }
         ]
       }
