@@ -8,63 +8,63 @@
       "schema": {
         "fields": [
           {
-            "name": "id",
+            "name": "ITEM",
             "type": "integer",
             "format": "default",
             "title": "ID",
             "description": "Número sequencial com as doações"
           },
           {
-            "name": "destinatario_doacao",
+            "name": "DESTINATARIO_DOACAO",
             "type": "any",
             "format": "default",
             "title": "Destinatário da Doação",
             "description": "Descrição do destinatário da doação"
           },
           {
-            "name": "data_entrega ",
+            "name": "DATA_ENTREGA",
             "type": "any",
             "format": "default",
             "title": "Data de entrega ",
             "description": "Data de entrega da doação ao destinatário"
           },
           {
-            "name": "cidade_destinatario",
+            "name": "CIDADE_DESTINATARIO",
             "type": "any",
             "format": "default",
             "title": "Cidade do destinatário",
             "description": "Cidade do Destinatário"
           },
           {
-            "name": "produto",
+            "name": "PRODUTO",
             "type": "any",
             "format": "default",
             "title": "Produto",
             "description": "Descrição do bem ou material destinado"
           },
           {
-            "name": "quantidade",
+            "name": "QUANTIDADE",
             "type": "number",
             "format": "default",
             "description": "Quantidade fracionada do bem ou material doado",
             "title": "Quantidade"
           },
           {
-            "name": "unidade ",
+            "name": "UNIDADE_MEDIDA",
             "type": "any",
             "format": "default",
             "title": "Unidade",
             "description": "Unidade fracionada do bem ou material doado"
           },
           {
-            "name": "valor_unitario ",
+            "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
             "title": "Valor unitário ",
             "description": "Valor unitário comercial do bem ou material doado"
           },
           {
-            "name": "valor_total",
+            "name": "VALOR_TOTAL",
             "type": "number",
             "format": "default",
             "title": "Valor total",
@@ -80,97 +80,97 @@
       "schema": {
         "fields": [
           {
-            "name": "id",
+            "name": "ITEM",
             "type": "integer",
             "format": "default",
             "title": "ID",
             "description": "Número sequencial"
           },
           {
-            "name": "tipo_doacao",
+            "name": "TIPO_DOACAO",
             "type": "any",
             "format": "default",
             "title": "Tipo de doação",
             "description": "Tipo de bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
           },
           {
-            "name": "doador",
+            "name": "DOADOR",
             "type": "any",
             "format": "default",
             "title": "Doador",
             "description": "Nome completo do responsável pela doação"
           },
           {
-            "name": "cnpj_doador",
+            "name": "CNPJ_DOADOR",
             "type": "string",
             "format": "default",
             "title": "CNPJ do doador",
             "description": "CNPJ do doador"
           },
           {
-            "name": "orgao_entidade _estadual",
+            "name": "ORGAO_ENTIDADE",
             "type": "any",
             "format": "default",
             "title": "Órgão ou Entidade Estadual",
             "description": "Órgão ou Entidade Estadual responsável pelo recebimento da doação"
           },
           {
-            "name": "cnpj_orgao_entidade ",
+            "name": "CNPJ_ORGAO_ENTIDADE",
             "type": "string",
             "format": "default",
             "description": "CNPJ dos Órgãos ou Entidades Estaduais responsáveis pelo recebimento da doação",
             "title": "CNPJ do Órgão ou entidade"
           },
           {
-            "name": "local_recebimento",
+            "name": "LOCAL_RECEBIMENTO",
             "type": "any",
             "format": "default",
             "title": "Local de recebimento",
             "description": "Local em que a doação foi entregue para o Estado"
           },
           {
-            "name": "data_doacao",
+            "name": "DATA_DOACAO",
             "type": "date",
             "format": "default",
             "title": "Data da doação"
           },
           {
-            "name": "classificacao_produto",
+            "name": "CLASSIFICACAO_PRODUTO",
             "type": "any",
             "format": "default",
             "title": "Classificação do produto",
             "description": "Classificação do produto doado"
           },
           {
-            "name": "produto",
+            "name": "PRODUTO",
             "type": "any",
             "format": "default",
             "title": "Produto",
             "description": "Descrição do bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
           },
           {
-            "name": "unidade",
+            "name": "UNIDADE_MEDIDA",
             "type": "string",
             "format": "default",
             "title": "Unidade de medida",
             "description": "Unidade  de medida fracionada"
           },
           {
-            "name": "quantidade",
+            "name": "QUANTIDADE",
             "type": "number",
             "format": "default",
             "description": "Quantidade fracionada",
             "title": "Quantidade"
           },
           {
-            "name": "valor_unitario ",
+            "name": "VALOR_UNITARIO",
             "type": "number",
             "format": "default",
             "title": "Valor unitário ",
             "description": "Valor unitário comercial do bem ou material doado"
           },
           {
-            "name": "valor_total",
+            "name": "VALOR_TOTAL",
             "type": "number",
             "format": "default",
             "description": "Valor total comercial do bem ou material doado",
