@@ -1,79 +1,7 @@
 {
   "profile": "tabular-data-package",
   "resources": [
-    {
-      "name": "doacoes-destino",
-      "path": "data/doacoes_destino.csv",
-      "profile": "tabular-data-resource",
-      "schema": {
-        "fields": [
-          {
-            "name": "ITEM",
-            "type": "integer",
-            "format": "default",
-            "title": "ID",
-            "description": "Número sequencial com as doações"
-          },
-          {
-            "name": "DESTINATARIO_DOACAO",
-            "type": "any",
-            "format": "default",
-            "title": "Destinatário da Doação",
-            "description": "Descrição do destinatário da doação"
-          },
-          {
-            "name": "DATA_ENTREGA",
-            "type": "any",
-            "format": "default",
-            "title": "Data de entrega ",
-            "description": "Data de entrega da doação ao destinatário"
-          },
-          {
-            "name": "CIDADE_DESTINATARIO",
-            "type": "any",
-            "format": "default",
-            "title": "Cidade do destinatário",
-            "description": "Cidade do Destinatário"
-          },
-          {
-            "name": "PRODUTO",
-            "type": "any",
-            "format": "default",
-            "title": "Produto",
-            "description": "Descrição do bem ou material destinado"
-          },
-          {
-            "name": "QUANTIDADE",
-            "type": "number",
-            "format": "default",
-            "description": "Quantidade fracionada do bem ou material doado",
-            "title": "Quantidade"
-          },
-          {
-            "name": "UNIDADE_MEDIDA",
-            "type": "any",
-            "format": "default",
-            "title": "Unidade",
-            "description": "Unidade fracionada do bem ou material doado"
-          },
-          {
-            "name": "VALOR_UNITARIO",
-            "type": "number",
-            "format": "default",
-            "title": "Valor unitário ",
-            "description": "Valor unitário comercial do bem ou material doado"
-          },
-          {
-            "name": "VALOR_TOTAL",
-            "type": "number",
-            "format": "default",
-            "title": "Valor total",
-            "description": "Valor total do bem ou material doado"
-          }
-        ]
-      }
-    },
-    {
+        {
       "name": "doacoes-recebidas",
       "path": "data/doacoes_recebidas.csv",
       "profile": "tabular-data-resource",
@@ -175,6 +103,78 @@
             "format": "default",
             "description": "Valor total comercial do bem ou material doado",
             "title": "Valor total "
+          }
+        ]
+      }
+    }
+    {
+      "name": "doacoes-destino",
+      "path": "data/doacoes_destino.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "ITEM",
+            "type": "integer",
+            "format": "default",
+            "title": "ID",
+            "description": "Número sequencial com as doações"
+          },
+          {
+            "name": "DESTINATARIO_DOACAO",
+            "type": "any",
+            "format": "default",
+            "title": "Destinatário da Doação",
+            "description": "Descrição do destinatário da doação"
+          },
+          {
+            "name": "DATA_ENTREGA",
+            "type": "any",
+            "format": "default",
+            "title": "Data de entrega ",
+            "description": "Data de entrega da doação ao destinatário"
+          },
+          {
+            "name": "CIDADE_DESTINATARIO",
+            "type": "any",
+            "format": "default",
+            "title": "Cidade do destinatário",
+            "description": "Cidade do Destinatário"
+          },
+          {
+            "name": "PRODUTO",
+            "type": "any",
+            "format": "default",
+            "title": "Produto",
+            "description": "Descrição do bem ou material destinado"
+          },
+          {
+            "name": "QUANTIDADE",
+            "type": "number",
+            "format": "default",
+            "description": "Quantidade fracionada do bem ou material doado",
+            "title": "Quantidade"
+          },
+          {
+            "name": "UNIDADE_MEDIDA",
+            "type": "any",
+            "format": "default",
+            "title": "Unidade",
+            "description": "Unidade fracionada do bem ou material doado"
+          },
+          {
+            "name": "VALOR_UNITARIO",
+            "type": "number",
+            "format": "default",
+            "title": "Valor unitário ",
+            "description": "Valor unitário comercial do bem ou material doado"
+          },
+          {
+            "name": "VALOR_TOTAL",
+            "type": "number",
+            "format": "default",
+            "title": "Valor total",
+            "description": "Valor total do bem ou material doado"
           }
         ]
       }
