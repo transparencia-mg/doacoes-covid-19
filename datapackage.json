@@ -188,6 +188,13 @@
   "name": "doacoes-covid-19",
   "title": "Doações COVID-19",
   "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
+  "sources": [
+    {
+      "title": "Coordenadoria Estadual de Defesa Civil - CEDEC/MG",
+      "path": "data-raw/doacoes-covid-19.xls",
+      "email": "defesacivil@defesacivil.mg.gov.br"
+    }
+  ],
   "private": "false",
   "state": "active"
 }
