@@ -2,8 +2,8 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "doacoes-recebidas",
-      "path": "data/doacoes_recebidas.csv",
+      "name": "doacoes-entrada",
+      "path": "data/doacoes-entrada.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -112,8 +112,8 @@
       }
     },
     {
-      "name": "doacoes-destino",
-      "path": "data/doacoes_destino.csv",
+      "name": "doacoes-saida",
+      "path": "data/doacoes-saida.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
