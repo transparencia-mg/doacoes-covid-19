@@ -16,14 +16,14 @@
           },
           {
             "name": "TIPO_DOACAO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Tipo de doação",
             "description": "Tipo de bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
           },
           {
             "name": "DOADOR",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Doador",
             "description": "Nome completo do responsável pela doação"
@@ -37,7 +37,7 @@
           },
           {
             "name": "ORGAO_ENTIDADE",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Órgão ou Entidade Estadual",
             "description": "Órgão ou Entidade Estadual responsável pelo recebimento da doação"
@@ -51,7 +51,7 @@
           },
           {
             "name": "LOCAL_RECEBIMENTO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Local de recebimento",
             "description": "Local em que a doação foi entregue para o Estado"
@@ -64,14 +64,14 @@
           },
           {
             "name": "CLASSIFICACAO_PRODUTO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Classificação do produto",
             "description": "Classificação do produto doado"
           },
           {
             "name": "PRODUTO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Produto",
             "description": "Descrição do bem ou material doado ao Estado. Exemplo: Financeiro, materiais, serviços, bens e etc"
@@ -126,28 +126,28 @@
           },
           {
             "name": "DESTINATARIO_DOACAO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Destinatário da Doação",
             "description": "Descrição do destinatário da doação"
           },
           {
             "name": "DATA_ENTREGA",
-            "type": "any",
+            "type": "date",
             "format": "default",
             "title": "Data de entrega ",
             "description": "Data de entrega da doação ao destinatário"
           },
           {
             "name": "CIDADE_DESTINATARIO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Cidade do destinatário",
             "description": "Cidade do Destinatário"
           },
           {
             "name": "PRODUTO",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Produto",
             "description": "Descrição do bem ou material destinado"
@@ -161,7 +161,7 @@
           },
           {
             "name": "UNIDADE_MEDIDA",
-            "type": "any",
+            "type": "string",
             "format": "default",
             "title": "Unidade",
             "description": "Unidade fracionada do bem ou material doado",
