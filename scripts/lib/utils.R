@@ -28,6 +28,7 @@ read <- function(path) {
   cols_spec_saida <- c(
     ITEM = "numeric",
     DESTINATARIO_DOACAO = "text",
+    CNPJ_DESTINATARIO_DOACAO = "text",
     DATA_ENTREGA = "date",
     CIDADE_DESTINATARIO = "text",
     PRODUTO = "text",

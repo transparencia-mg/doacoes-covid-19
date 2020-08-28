@@ -132,6 +132,13 @@
             "description": "Descrição do destinatário da doação"
           },
           {
+            "name": "CNPJ_DESTINATARIO_DOACAO",
+            "type": "string",
+            "format": "default",
+            "title": "CNPJ do Destinatário da Doação",
+            "description": "CNPJ do Destinatário da Doação"
+          },
+          {
             "name": "DATA_ENTREGA",
             "type": "date",
             "format": "default",
