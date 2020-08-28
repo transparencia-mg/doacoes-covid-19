@@ -1,3 +1,4 @@
+library(magrittr)
 source("scripts/lib/utils.R")
 
 datapackage <- jsonlite::read_json("datapackage.json")
@@ -9,4 +10,4 @@ res <- purrr::map2(id, output, ckanr::resource_update,
                   url = Sys.getenv("DADOSMG_PROD_HOST"), 
                   key = Sys.getenv("DADOSMG_PROD"))
 
-map2(output, purrr::map(res, "url"), check_upload)
+purrr::map2(output, purrr::map(res, "url"), check_upload)
