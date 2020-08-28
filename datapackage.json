@@ -2,6 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
+      "id": "9332cc28-1926-428b-9b0f-c2444c12b3ac",
       "name": "doacoes-entrada",
       "path": "data/doacoes-entrada.csv",
       "profile": "tabular-data-resource",
@@ -112,6 +113,7 @@
       }
     },
     {
+      "id": "a958f59c-9f00-423d-923b-f489f7f038b4",
       "name": "doacoes-saida",
       "path": "data/doacoes-saida.csv",
       "profile": "tabular-data-resource",
