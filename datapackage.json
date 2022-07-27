@@ -4,6 +4,7 @@
     {
       "id": "9332cc28-1926-428b-9b0f-c2444c12b3ac",
       "name": "doacoes-entrada",
+      "title":"Doações Recebidas",
       "path": "data/doacoes-entrada.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -115,6 +116,7 @@
     {
       "id": "a958f59c-9f00-423d-923b-f489f7f038b4",
       "name": "doacoes-saida",
+      "title":"Doações Realizadas",
       "path": "data/doacoes-saida.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -203,7 +205,7 @@
   ],
   "name": "doacoes-covid-19",
   "title": "Doações COVID-19",
-  "description": "Contém a relação das doações recebidas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
+  "description": "Contém a relação das doações recebidas e realizadas pelo Estado de Minas Gerais para combate a pandemia causa pela COVID-19 e a destinação dessas doações",
   "sources": [
     {
       "title": "Coordenadoria Estadual de Defesa Civil - CEDEC/MG",
